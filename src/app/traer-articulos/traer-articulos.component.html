@@ -1,0 +1,14 @@
+<table class="table table-hover table-bordered">
+	<thead class="thead-dark">
+		<th>Titulo</th>
+		<th>Editar</th>
+		<th>Eliminar</th>
+	</thead>
+	<tbody>
+		<tr *ngFor="let articulo of articulos">
+			<td><a routerLink="">{{articulo.titulo}}</a></td>	
+			<td><a routerLink="" class="btn btn-warning">Editar</a></td>
+			<td><a (click)="eliminarArticulo(articulo.id)" class="btn btn-danger">Eliminar</a></td>
+		</tr>
+	</tbody>
+</table>
