@@ -26,8 +26,8 @@ export class ArticulosService {
   	}
 
   	/*GET show*/
-  	mostrarArticulo(id){
-
+  	mostrarArticulo(id):Observable<any>{
+      return this.http.get<any>(this.url+'/'+id,this.encabezados);
   	}
 
   	/*POST create*/
