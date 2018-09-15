@@ -31,13 +31,16 @@ export class ArticulosService {
   	}
 
   	/*POST create*/
-  	crearArticulo(articulo){
-
+  	crearArticulo(articulo):Observable<any>{
+      let params= JSON.stringify(articulo);
+      return this.http.post<any>(this.url,params,this.encabezados);
   	}
 
   	/*PUT update*/
-  	modificarArticulo(articulo){
-
+  	modificarArticulo(articulo):Observable<any>{
+      let params= JSON.stringify(articulo);
+      return this.http.
+        put<any>(this.url+"/"+articulo.id, params, this.encabezados);
   	}
 
   	/*DELETE destroy*/
