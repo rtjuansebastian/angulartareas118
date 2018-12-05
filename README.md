@@ -1,5 +1,7 @@
 # Articulos
 
+Aplicación en Angular que consume información de un API para manipular una base de datos de articulos noticiosos creada como ejemplo para el curso FULL STACK Piensa digital de fedesoft
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
 ## Development server
